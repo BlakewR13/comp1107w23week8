@@ -73,17 +73,17 @@ int main(int argc, char *argv[])
          print_ascii_string_value();
         break;
 
-       // case 6:
-      //  int modulo_testing();
-       // break;
+        case 6:
+        print_provinces();
+        break;
 
          case 7:
         change_machine();
         break;
 
-      //    case 8:
-      //  int modulo_testing();
-      //  break;
+         case 8:
+        rock_paper_scissors();
+        break;
 
        // case 9:
       //  int modulo_testing();
@@ -171,7 +171,7 @@ float for_loop_testing()
     {
         increment = increment * -1;
     }
-    for(int i = 0; i < loop_count ; i++)
+    for(int i = 0; i < loop_count ; i++)  
     {
        counter = counter + increment;
     }
@@ -224,22 +224,43 @@ void change_machine()
 
     //TODO: Get a float from the user and return the change needed for that amount IE: 2.95
     //      returns 3 quarters and 2 dimes.
+    float payment = get_float("?\n");
 
     //Optional TODO::The government makes businesses round up the nickels for numbers ending in 3 and 8.
-    
 }
+
 
 string rock_paper_scissors()
 {
+// declare 1-3 as rock paper scissors
+// Create loop to define what beats what
+// get AI chose wiht random number
+// 
+
+
     //TODO:: Query the user for an int between 1 and 3 for their choice of rock, paper scissors.
     //      Use a do while loop to guarantee their input is valid
 
+    int rock = 1;
+
+    int paper = 2;
+
+    int scissors = 3;
+
+    int ai_choice;
+    do{
+    int player_choice = get_int("What would you like to choose?\n rock = 1\n paper = 2\n scissors = 3");
+
+    }while(player_choice < 4 && player_choice > 0);
+    
+    string ai_choice = rock_paper_scissors_choices(ai_choice);
     // Generates a pseudo random int between 0 and 29
     // Use this to determine the "AI" choice
     int random = rand() % 30;
+    random = (random + 10) / 10 ;
 
    //TODO:: Write the game logic with if checks and determine who won
-
+    for(i = ;;);
 }
 
 //Convenience function you can call
